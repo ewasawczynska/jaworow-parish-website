@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Website of the Jaworów parish.",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --public-url /jaworow-parish-website/"
+    "start": "parcel *.html",
+    "build": "parcel build *.html --public-url /jaworow-parish-website/"
   },
   "keywords": [
     "church",
