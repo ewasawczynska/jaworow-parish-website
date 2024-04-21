@@ -1,0 +1,30 @@
+{
+  "name": "jaworow-parish-website",
+  "version": "1.0.0",
+  "description": "Website of the Jaworów parish.",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url /jaworow-parish-website/"
+  },
+  "keywords": [
+    "church",
+    "kościół",
+    "Jaworów",
+    "parafia",
+    "parish"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewasawczynska/jaworow-parish-website.git"
+  },
+  "author": "Ewa Sawczyńska <sawczynska.e@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewasawczynska/jaworow-parish-website/issues"
+  },
+  "homepage": "https://github.com/ewasawczynska/jaworow-parish-website",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "posthtml-include": "^2.0.1"
+  }
+}
