@@ -1,7 +1,7 @@
 // style components
 @use "./components/footer" as *;
 @use "./components/masses" as *;
-@use "./components/nav" as *;
+@use "./components/header" as *;
 @use "./components/prayer" as *;
 @use "./components/utils" as *;
 
@@ -20,10 +20,6 @@ body {
     font-family: $defaultFont;
     letter-spacing: 0.1px;
     line-height: 1.15;
-
-    // temporary
-    margin-top: 10%;
-    text-align: center;
 }
 
 h1,
@@ -72,18 +68,16 @@ img {
 }
 
 .container {
+    margin: 15px auto;
     max-width: 480px;
-    padding: 0px 20px;
-    align-items: center;
-    margin: 0 auto;
-  
+    
     @media screen and (min-width: 768px) {
+      margin: 20px auto;
       max-width: 768px;
-      padding: 0px 75px;
     }
   
     @media screen and (min-width: 1024px) {
+      margin: 25px auto;
       max-width: 1280px;
-      padding: 0px 70px;
     }
   }
