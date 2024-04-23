@@ -1,1 +1,0 @@
-{"mappings":"AAIA","sources":["styles/sass/main.scss"],"sourcesContent":["\n@import './components/nav';\n@import './utils/vars';\n\nbody {\n    color: $defaultFontColor;\n}"],"names":[],"version":3,"file":"index.c41b5a0e.css.map","sourceRoot":"/__parcel_source_root/"}
