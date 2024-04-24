@@ -1,17 +1,61 @@
 .header {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    @include mq(tablet) {
-      margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  font-size: $size-xl;
+  font-weight: $weight-l;
+  letter-spacing: 1.2;
+  margin-top: 50px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__line {
+    border-bottom: 1px solid $contrastColor;
+    margin-top: 50px;
+  }
+
+  &__link {
+    transition-duration: 0.5s;
+    &:focus,
+    &:hover {
+      color: $contrastColor;
     }
+  }
+
+  &__side {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    &--linkbox {
+      display: flex;
+      flex-direction: row;
+      gap: 80;
+      justify-content: space-between;
+    }
+    &--linkbox-l {
+      margin-right: 20px;
+    }
+    &--linkbox-r {
+      margin-left: 20px;
+    }
+  }
 
     &__logo {
+      display: flex;
+      justify-content: center;
+      margin-top: -140px;
+      &--img {
       height: 25%;
       width: 25%;
+      margin-top: 50px;
       @include mq(tablet) {
         height: 15%;
         width: 15%;
       }
     }
-}
+  }
+  }
