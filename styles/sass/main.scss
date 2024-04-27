@@ -12,15 +12,15 @@
 
 // main styles
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: $lightColor;
-    color: $fontColor;
-    font-family: $defaultFont;
-    letter-spacing: 0.1px;
-    line-height: 1.15;
+  background-color: $lightColor;
+  color: $fontColor;
+  font-family: $defaultFont;
+  letter-spacing: 0.1px;
+  line-height: 1.15;
 }
 
 h1,
@@ -35,9 +35,9 @@ h6 {
 
 ul,
 ol {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -47,8 +47,8 @@ p {
 
 a,
 a:visited {
-  text-decoration: none;
   color: currentColor;
+  text-decoration: none;
 }
 
 figcaption {
@@ -69,14 +69,14 @@ img {
 }
 
 .container {
-    inline-size: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 480px;
-    @include mq(tablet) {
-      max-width: 768px;
-    }
-    @include mq(desktop) {
-      max-width: 1280px;
-    }
+  inline-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  @include mq(tablet) {
+    max-width: 768px;
+  }
+  @include mq(desktop) {
+    max-width: 1280px;
+  }
   }

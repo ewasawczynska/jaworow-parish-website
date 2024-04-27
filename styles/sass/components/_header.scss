@@ -1,8 +1,3 @@
-.header {
-  display: flex;
-  flex-direction: column;
-}
-
 .nav {
   font-size: $size-xl;
   font-weight: $weight-l;
@@ -12,50 +7,48 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  &__side {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+  }
   &__line {
     border-bottom: 1px solid $contrastColor;
     margin-top: 50px;
   }
+}
 
+.nav-box {
+  display: flex;
+  flex-direction: row;
+  gap: 80;
+  justify-content: space-between;
   &__link {
     transition-duration: 0.5s;
     &:focus,
     &:hover {
       color: $contrastColor;
-    }
+    };
   }
+  &--left {
+    margin-right: 20px;
+  }
+  &--right {
+    margin-left: 20px;
+  }
+}
 
-  &__side {
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-    &--linkbox {
-      display: flex;
-      flex-direction: row;
-      gap: 80;
-      justify-content: space-between;
-    }
-    &--linkbox-l {
-      margin-right: 20px;
-    }
-    &--linkbox-r {
-      margin-left: 20px;
-    }
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: -140px;
+  &__img {
+  height: 25%;
+  width: 25%;
+  margin-top: 50px;
+  @include mq(tablet) {
+    height: 15%;
+    width: 15%;
   }
-
-    &__logo {
-      display: flex;
-      justify-content: center;
-      margin-top: -140px;
-      &--img {
-      height: 25%;
-      width: 25%;
-      margin-top: 50px;
-      @include mq(tablet) {
-        height: 15%;
-        width: 15%;
-      }
-    }
-  }
-  }
+}
+}
