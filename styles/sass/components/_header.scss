@@ -4,13 +4,27 @@
   letter-spacing: 1.2;
   margin-top: 50px;
   text-transform: uppercase;
+  text-wrap: nowrap;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @include mq(tablet) {
+    font-size: $size-m
+  }
+  @include mq(desktop) {
+    font-size: $size-xl;
+  }
   &__side {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    @include mq(tablet) {
+      width: calc((90vw - 164px) / 2);
+      max-width: 500px;
+    }
+    @include mq(desktop) {
+      width: calc((90vw - 234px) / 2);
+      max-width: 500px;
+    }
   }
   &__line {
     border-bottom: 1px solid $contrastColor;
@@ -23,6 +37,12 @@
   flex-direction: row;
   gap: 80;
   justify-content: space-between;
+  @include mq(tablet) {
+    gap: 10;
+  }
+  @include mq(desktop) {
+    gap: 80;
+  }
   &__link {
     transition-duration: 0.5s;
     &:focus,
@@ -47,8 +67,12 @@
   width: 25%;
   margin-top: 50px;
   @include mq(tablet) {
-    height: 15%;
-    width: 15%;
+    height: 168px;
+    width: 199px;
+  }
+  @include mq(desktop) {
+    height: 198px;
+    width: 234px;
   }
 }
 }
