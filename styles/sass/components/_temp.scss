@@ -4,15 +4,27 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    font-size: 26px;
-    letter-spacing: 7;
     margin-top: 25vh;
     text-align: center;
-
     &__dots {
         font-size: 36px;
         letter-spacing: 25;
     }
+	&__txt {
+		font-size: 26px;
+		letter-spacing: 7;
+	}
+	&__back {
+		font-size: 12px;
+		letter-spacing: 4;
+		margin-top: 5vh;
+		text-decoration: underline;
+		transition-duration: 0.5s;
+		&:focus,
+		&:hover {
+		  color: $contrastColor;
+		};
+	}
 }
 
 .build__loader {

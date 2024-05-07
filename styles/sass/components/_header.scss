@@ -1,18 +1,19 @@
 .nav {
-  font-size: $size-xl;
-  font-weight: $weight-l;
-  letter-spacing: 1.2;
-  margin-top: 50px;
-  text-transform: uppercase;
-  text-wrap: nowrap;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: none;
   @include mq(tablet) {
-    font-size: $size-m
+    display: flex;
+    font-size: $size-m;
+    font-weight: $weight-l;
+    letter-spacing: 1.2;
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   @include mq(desktop) {
-    font-size: $size-xl;
+    font-size: $size-l;
   }
   &__side {
     display: flex;
@@ -58,21 +59,45 @@
   }
 }
 
-.logo {
+.logo-box {
   display: flex;
-  justify-content: center;
-  margin-top: -140px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
   &__img {
-  height: 25%;
-  width: 25%;
-  margin-top: 50px;
-  @include mq(tablet) {
     height: 168px;
+    margin-top: 20px;
     width: 199px;
+  @include mq(tablet) {
+    margin-top: -90px;
   }
   @include mq(desktop) {
     height: 198px;
+    margin-top: -110px;
     width: 234px;
   }
 }
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  @include mq(tablet) {
+    display: none;
+  }
+  &__burger {
+    height: 32px;
+    margin-top: 10px;
+    stroke: $fontColor;
+    width: 32px;
+    transition-duration: 0.5s;
+    &:focus,
+    &:hover {
+      stroke: $contrastColor;
+    };
+  }
 }

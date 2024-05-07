@@ -1,0 +1,56 @@
+.menu-mobile {
+    background-color: $bgColor;
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    &__exit {
+      align-self: flex-end;
+      background-color: inherit;
+      border: none;
+      margin-right: 22px;
+      margin-top: 22px;
+      stroke: $fontColor;
+      transition-duration: 0.5s;
+      &:focus,
+      &:hover {
+        cursor: pointer;
+        stroke: $contrastColor;
+      }
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25;
+      justify-content: center;
+      font-size: $size-xl;
+      font-weight: $weight-l;
+      height: 90vh;
+      letter-spacing: 1.2;
+      text-transform: uppercase;
+    }
+    &__item {
+      margin-bottom: 26px;
+    }
+    &__link {
+      text-decoration: none;
+      color: $fontColor;
+      transition-duration: 0.5s;
+      &:focus,
+      &:hover {
+        color: $contrastColor;
+      }
+    }
+  }
+  
+.is-open {
+  display: flex;
+  transform: translateX(0);
+}
