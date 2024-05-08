@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="./styles/css/main.min.css" />
   </head>
   <body>
-    <header>
 <!-- header -->
+    <header>
       <div class="container">
         <nav class="nav">
           <div class="nav__side">
@@ -68,9 +68,19 @@
         </button>
         </div>
       </div>
-<!-- --- -->
     </header>
+<!-- --- -->
+  <div class="gallery">
+    <div class="gallery__container">
+        <img src="./images/churches/jaworow.jpg" alt="Kościół w Jaworowie" class="img-active">
+        <img src="./images/churches/czestocice.jpg" alt="Kościół w Częstocicach">
+        <img src="./images/churches/olesnica_mala.jpg" alt="Kościół w Oleśnicy Małej">
+        <img src="./images/churches/klosow.jpg" alt="Kościół w Kłosowie">
     </div>
+  </div>
+  <div class="info">
+    <button class="info__button" type="button">Ogłoszenia parafialne</button>
+  </div>
 <!-- mobile menu -->
     <div class="menu-mobile js-menu-container" id="mobile-menu">
       <button class="menu-mobile__exit menu-toggle js-close-menu">
@@ -104,6 +114,7 @@
 <!-- --- -->
 <!-- scripts -->
   <script defer src="./js/mobile-menu.js"></script>
+  <script defer src="./js/gallery.js"></script>
 <!-- --- -->
   </body>
 </html>
