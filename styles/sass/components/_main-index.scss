@@ -68,9 +68,16 @@
         &--header {
             margin-bottom: 15px;
             margin-top: 15px;
+            text-align: center;
+            @include mq(tablet) {
+                text-align: left;
+            }
         }
         &--left {
-            text-align: right;
+            text-align: center;
+            @include mq(tablet) {
+                text-align: right;
+            }
         }
     }
 }
@@ -80,9 +87,17 @@
     display: flex;
     font-size: $size-xl;
     gap: 25px;
+    justify-content: center;
+    @include mq(tablet) {
+        justify-content: flex-start;
+    }
     &--left {
-        justify-content: flex-end;
-        text-align: right;
+        justify-content: center;
+        @include mq(tablet) {
+            justify-content: flex-end;
+            text-align: right;
+        }
+        
     }
 }
 
@@ -92,8 +107,14 @@
 
 .masses-box {
     display: flex;
-    justify-content: center;
-    gap: 150;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25;
+    @include mq(tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 150;
+    }
 }
 
 .masses-txt {
@@ -105,22 +126,22 @@
 
 // prayer styles
 .michael-prayer {
-    background: url(../../images/michael_image_transparent.png);
-    height: 100px;
-    width: 200px;
+    background: url(../../images/michael_image.png);
     background-position: 50% 30%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 620px;
-    margin-top: 25px;
     width: 100%;
 }
 
 .text {
-    font-size: $size-xl;
-    margin-top: 15px;
-    text-align: center;
+    font-size: $size-m;
+    margin-top: 10px;
     line-height: 2;
+    @include mq(tablet) {
+        font-size: $size-xl;
+        margin-top: 25px;
+    }
 }
 
 .michael-box {
@@ -128,8 +149,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
+    padding-top: 180px;
     padding-left: 50px;
     padding-right: 50px;
-    
+    text-align: center;
+    @include mq(tablet) {
+        padding-top: 270px;
+    }
 }

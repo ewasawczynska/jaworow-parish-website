@@ -1,0 +1,33 @@
+footer {
+    background-color: $bgColor;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    &__element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15;
+        &--left {
+            align-items: flex-end;
+        }
+    }
+}
+
+.footer-contact {
+    font-weight: $weight-l;
+    transition-duration: 0.5s;
+    &:focus,
+    &:hover {
+      color: $contrastColor;
+      fill: $contrastColor;
+    };
+    &__icon {
+        margin-left: 20px;
+        margin-bottom: -6px;
+    }
+}
