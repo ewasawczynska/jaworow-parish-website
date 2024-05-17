@@ -1,6 +1,7 @@
 // gallery styles
 .gallery {
     height: calc(100vh - 220px);
+    box-shadow: 22px -10px 22px -15px rgba(232, 226, 212, 1);
     margin-top: 25px;
     overflow: hidden;
     width: 100%;
@@ -10,13 +11,10 @@
         justify-content: center;
         & img {
             display: none;
-            transition-duration: 3s;
             width: 100%;
             &.img-active {
                 display: inline-block;
                 opacity: 1;
-                transition: opacity 3s ease-in-out;
-                
             }
         }
     }
@@ -56,9 +54,9 @@
 
 .masses {
     margin-top: 300px;
-    border: 3px solid transparent;
-    box-shadow: 0px 0px 42px -23px rgba(173, 131, 48, 1);
-    border-radius: 10px;
+    // border: 3px solid transparent;
+    // box-shadow: 0px 0px 42px -23px rgba(232, 226, 212, 1);
+    // border-radius: 10px;
     // border-radius: 10px;
     padding: 25px;
     text-transform: uppercase;
@@ -71,15 +69,15 @@
             margin-bottom: 15px;
             margin-top: 15px;
             text-align: center;
-            @include mq(tablet) {
-                text-align: left;
-            }
+            // @include mq(tablet) {
+            //     text-align: left;
+            // }
         }
         &--left {
             text-align: center;
-            @include mq(tablet) {
-                text-align: right;
-            }
+            // @include mq(tablet) {
+            //     text-align: right;
+            // }
         }
     }
 }
@@ -90,13 +88,14 @@
     font-size: $size-xl;
     gap: 25px;
     justify-content: center;
-    @include mq(tablet) {
-        justify-content: flex-start;
-    }
+    align-items: center;
+    // @include mq(tablet) {
+    //     justify-content: flex-start;
+    // }
     &--left {
         justify-content: center;
         @include mq(tablet) {
-            justify-content: flex-end;
+            // justify-content: flex-end;
             text-align: right;
         }
         
@@ -110,11 +109,11 @@
 .masses-box {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     gap: 25;
     @include mq(tablet) {
         flex-direction: row;
-        justify-content: space-between;
+        // justify-content: space-between;
         gap: 150;
     }
 }
@@ -126,19 +125,23 @@
     text-align: center;
 }
 
+.masses-left {
+    text-align: left;
+}
+
 // prayer styles
 .michael-prayer {
     background: url(../../images/michael_image.png);
     background-position: 50% 30%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 620px;
+    height: 600px;
     width: 100%;
 }
 
 .text {
     font-size: $size-m;
-    margin-top: 10px;
+    margin-top: -10px;
     line-height: 2;
     @include mq(tablet) {
         font-size: $size-xl;
@@ -151,11 +154,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 180px;
+    padding-top: 200px;
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
     @include mq(tablet) {
-        padding-top: 270px;
+        padding-top: 250px;
     }
+}
+
+.title {
+    text-transform: uppercase;
 }

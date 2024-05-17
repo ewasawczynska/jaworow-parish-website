@@ -10,4 +10,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setInterval(toggleImages, 3000);
 });
-
