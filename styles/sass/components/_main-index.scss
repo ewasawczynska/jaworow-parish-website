@@ -30,15 +30,15 @@
     justify-content: center;
     margin-top: -40vh;
     &__button {
-        background-color: $lightColor;
-        border: 3px solid transparent;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px 0px rgba(1, 28, 80, 1);
+        background-color: rgba(250, 250,250, 0.6);
+        border: 3px solid $fontColor;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(1, 28, 80, 0.3);
         cursor: pointer;
-        font-size: $size-xl;
+        font-size: $size-xxl;
         font-weight: $weight-l;
-        letter-spacing: 2;
-        padding: 15px 30px;
+        letter-spacing: 3;
+        padding: 20px 40px;
         text-transform: uppercase;
         transition-duration: 0.5s;
         &:focus,
@@ -54,30 +54,31 @@
 
 .masses {
     margin-top: 300px;
-    // border: 3px solid transparent;
-    // box-shadow: 0px 0px 42px -23px rgba(232, 226, 212, 1);
-    // border-radius: 10px;
-    // border-radius: 10px;
+    margin-bottom: 25px;
     padding: 25px;
-    text-transform: uppercase;
     &__header {
+        font-size: $size-xl;
         margin-bottom: 20px;
         text-align: center;
+        text-transform: uppercase;
+        @include mq(tablet) {
+            font-size: $size-xxxl;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__element {
         &--header {
+            font-size: $size-l;
             margin-bottom: 15px;
             margin-top: 15px;
             text-align: center;
-            // @include mq(tablet) {
-            //     text-align: left;
-            // }
+            @include mq(tablet) {
+                font-size: $size-xxl;
+            }
         }
         &--left {
             text-align: center;
-            // @include mq(tablet) {
-            //     text-align: right;
-            // }
         }
     }
 }
@@ -85,20 +86,14 @@
 
 .masses-hours {
     display: flex;
-    font-size: $size-xl;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
-    // @include mq(tablet) {
-    //     justify-content: flex-start;
-    // }
-    &--left {
+    font-size: $size-m;
+    gap: 15px;
+    justify-content: flex-start;
+    @include mq(tablet) {
+        font-size: $size-xl;
+        gap: 25px;
         justify-content: center;
-        @include mq(tablet) {
-            // justify-content: flex-end;
-            text-align: right;
-        }
-        
+        align-items: center;
     }
 }
 
@@ -109,20 +104,25 @@
 .masses-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 25;
     @include mq(tablet) {
         flex-direction: row;
-        // justify-content: space-between;
         gap: 150;
+        justify-content: center;
     }
 }
 
 .masses-txt {
+    font-size: $size-xs;
     font-style: italic;
+    letter-spacing: 1.1;
     margin-top: 15px;
-    text-transform: none;
     text-align: center;
+    text-transform: none;
+    @include mq(tablet) {
+        font-size: $size-m;
+    }
 }
 
 .masses-left {

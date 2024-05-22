@@ -5,7 +5,7 @@
     font-size: $size-m;
     font-weight: $weight-l;
     letter-spacing: 1.2;
-    margin-top: 50px;
+    margin-top: 35px;
     text-transform: uppercase;
     text-wrap: nowrap;
     display: flex;
@@ -14,6 +14,7 @@
   }
   @include mq(desktop) {
     font-size: $size-l;
+    margin-top: 67px;
   }
   &__side {
     display: flex;
@@ -68,7 +69,7 @@
 .logo {
   &__img {
     height: 168px;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 199px;
   @include mq(tablet) {
     margin-top: -90px;
@@ -90,10 +91,10 @@
     display: none;
   }
   &__burger {
-    height: 32px;
+    height: 28px;
     margin-top: 10px;
     stroke: $fontColor;
-    width: 32px;
+    width: 28px;
     transition-duration: 0.5s;
     &:focus,
     &:hover {
