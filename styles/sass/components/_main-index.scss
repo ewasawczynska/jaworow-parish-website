@@ -52,84 +52,84 @@
 
 // masses styles
 
-.masses {
-    margin-top: 300px;
-    margin-bottom: 25px;
-    padding: 25px;
-    &__header {
-        font-size: $size-xl;
-        margin-bottom: 20px;
-        text-align: center;
-        text-transform: uppercase;
-        @include mq(tablet) {
-            font-size: $size-xxxl;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    &__element {
-        &--header {
-            font-size: $size-l;
-            letter-spacing: 1.5;
-            margin-bottom: 15px;
-            margin-top: 15px;
-            text-align: center;
-            text-transform: uppercase;
-            @include mq(tablet) {
-                font-size: $size-xxl;
-            }
-        }
-        &--left {
-            text-align: center;
-        }
-    }
-}
+// .masses {
+//     margin-top: 300px;
+//     margin-bottom: 25px;
+//     padding: 25px;
+//     &__header {
+//         font-size: $size-xl;
+//         margin-bottom: 20px;
+//         text-align: center;
+//         text-transform: uppercase;
+//         @include mq(tablet) {
+//             font-size: $size-xxxl;
+//             justify-content: center;
+//             align-items: center;
+//         }
+//     }
+//     &__element {
+//         &--header {
+//             font-size: $size-l;
+//             letter-spacing: 1.5;
+//             margin-bottom: 15px;
+//             margin-top: 15px;
+//             text-align: center;
+//             text-transform: uppercase;
+//             @include mq(tablet) {
+//                 font-size: $size-xxl;
+//             }
+//         }
+//         &--left {
+//             text-align: center;
+//         }
+//     }
+// }
 
 
-.masses-hours {
-    display: flex;
-    font-size: $size-m;
-    gap: 15px;
-    justify-content: flex-start;
-    @include mq(tablet) {
-        font-size: $size-xl;
-        gap: 25px;
-        justify-content: center;
-        align-items: center;
-    }
-}
+// .masses-hours {
+//     display: flex;
+//     font-size: $size-m;
+//     gap: 15px;
+//     justify-content: flex-start;
+//     @include mq(tablet) {
+//         font-size: $size-xl;
+//         gap: 25px;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
 
-.masses-item {
-    margin-bottom: 10px;
-}
+// .masses-item {
+//     margin-bottom: 10px;
+// }
 
-.masses-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 25;
-    @include mq(tablet) {
-        flex-direction: row;
-        gap: 150;
-        justify-content: center;
-    }
-}
+// .masses-box {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     gap: 25;
+//     @include mq(tablet) {
+//         flex-direction: row;
+//         gap: 150;
+//         justify-content: center;
+//     }
+// }
 
-.masses-txt {
-    font-size: $size-xs;
-    font-style: italic;
-    letter-spacing: 1.1;
-    margin-top: 15px;
-    text-align: center;
-    text-transform: none;
-    @include mq(tablet) {
-        font-size: $size-m;
-    }
-}
+// .masses-txt {
+//     font-size: $size-xs;
+//     font-style: italic;
+//     letter-spacing: 1.1;
+//     margin-top: 15px;
+//     text-align: center;
+//     text-transform: none;
+//     @include mq(tablet) {
+//         font-size: $size-m;
+//     }
+// }
 
-.masses-left {
-    text-align: left;
-}
+// .masses-left {
+//     text-align: left;
+// }
 
 // prayer styles
 .michael-prayer {
