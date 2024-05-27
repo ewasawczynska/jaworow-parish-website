@@ -75,6 +75,7 @@ footer {
 }
 
 .footer-contact {
+    fill: $fontColor;
     font-size: $size-m;
     transition-duration: 0.5s;
     &:focus,
@@ -86,7 +87,6 @@ footer {
         font-size: $size-l;
     }
     &__icon {
-        fill: $fontColor;
         @include mq(tablet) {
             margin-left: 20px;
             margin-bottom: -7px;
