@@ -67,6 +67,7 @@
       </div>
     </header>
 <!-- --- -->
+<!-- gallery with button -->
   <div class="gallery">
     <div class="gallery__container">
         <img src="./images/churches/jaworow.png" alt="Kościół w Jaworowie" class="img-active">
@@ -74,51 +75,53 @@
         <img src="./images/churches/klosow.png" alt="Kościół w Kłosowie">
         <img src="./images/churches/olesnica_mala.png" alt="Kościół w Oleśnicy Małej">
     </div>
+    <div class="info">
+      <button class="info__button" type="button">Ogłoszenia parafialne</button>
+    </div>
   </div>
-  <div class="info">
-    <button class="info__button" type="button">Ogłoszenia parafialne</button>
-  </div>
+<!-- --- -->
+<!-- masses -->
   <div class="container">
     <div class="masses">
-      <h2 class="masses__header">Msze Święte</h2>
-      <div class="masses-box">
-      <div class="masses__element">
-          <p class="masses__element--header">Niedziela</p>
+      <p class="masses__header">Msze Święte</p>
+      <div class="masses-container">
+        <div class="masses-container__element">
+          <p class="masses-subheader">Niedziela</p>
           <div class="masses-hours">
             <ul>
-              <li class="masses-item">08.30</li>
-              <li class="masses-item">09.30</li>
-              <li class="masses-item">10.45</li>
-              <li class="masses-item">12.00</li>
+              <li class="masses-hours__item">08.30</li>
+              <li class="masses-hours__item">09.30</li>
+              <li class="masses-hours__item">10.45</li>
+              <li class="masses-hours__item">12.00</li>
             </ul>
             <ul>
-              <li class="masses-item">Kłosów</li>
-              <li class="masses-item">Jaworów</li>
-              <li class="masses-item">Częstocice</li>
-              <li class="masses-item">Oleśnica Mała</li>
+              <li class="masses-hours__item">Kłosów</li>
+              <li class="masses-hours__item">Jaworów</li>
+              <li class="masses-hours__item">Częstocice</li>
+              <li class="masses-hours__item">Oleśnica Mała</li>
             </ul>
         </div>
       </div>
           <div class="masses__element">
-            <p class="masses__element--header masses__element--left">Dni powszednie</p>
-            <div class="masses-hours masses-hours--left">
+            <p class="masses-subheader masses-subheader--left">Dni powszednie</p>
+            <div class="masses-hours">
               <ul>
-                <li class="masses-item">18.00</li>
-                <li class="masses-item">18.00</li>
-                <li class="masses-item">18.00</li>
-                <li class="masses-item">18.00</li>
+                <li class="masses-hours__item">18.00</li>
+                <li class="masses-hours__item">18.00</li>
+                <li class="masses-hours__item">18.00</li>
+                <li class="masses-hours__item">18.00</li>
               </ul>
-              <ul class="masses-left">
-                <li class="masses-item">Kłosów</li>
-                <li class="masses-item">Częstocice</li>
-                <li class="masses-item">Oleśnica Mała</li>
-                <li class="masses-item">Jaworów</li>
+              <ul class="masses-position">
+                <li class="masses-hours__item">Kłosów</li>
+                <li class="masses-hours__item">Częstocice</li>
+                <li class="masses-hours__item">Oleśnica Mała</li>
+                <li class="masses-hours__item">Jaworów</li>
               </ul>
               <ul>
-                <li class="masses-item">║ wtorek</li>
-                <li class="masses-item">║ środa</li>
-                <li class="masses-item">║ czwartek</li>
-                <li class="masses-item">║ piątek</li>
+                <li class="masses-hours__item">┊ wtorek</li>
+                <li class="masses-hours__item">┊ środa</li>
+                <li class="masses-hours__item">┊ czwartek</li>
+                <li class="masses-hours__item">┊ piątek</li>
               </ul>
         </div>
       </div>
@@ -126,6 +129,7 @@
     <p class="masses-txt">Okazja do spowiedzi świętej przed/po Mszach Świętych w dni powszednie.</p>
     </div>
   </div>
+  <!-- --- -->
   <!-- <div class="container"> # modlitwę przenieść do modlitw???
     <div class="michael-prayer">
       <div class="michael-box">

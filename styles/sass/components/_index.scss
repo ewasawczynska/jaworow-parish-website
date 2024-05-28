@@ -9,6 +9,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
         & img {
             display: none;
             width: 100%;
@@ -20,24 +21,22 @@
     }
 }
 
-// .gallery__container > img {
-//     object-fit: scale-down;
-//     object-position: 90% 90%;
-//   }
-
+// button announements 
 .info {
     display: flex;
     justify-content: center;
-    margin-top: -40vh;
+    position: absolute;
+    left: 38%;
+    top: 60%;   
     &__button {
         background-color: rgba(250, 250,250, 0.6);
-        border: 3px solid $fontColor;
+        border: 2px solid $fontColor;
         border-radius: 5px;
         box-shadow: 0px 0px 10px 0px rgba(1, 28, 80, 0.3);
         color: $fontColor;
         cursor: pointer;
         font-family: $defaultFont;
-        font-size: $size-xxl;
+        font-size: $size-l;
         font-weight: $weight-l;
         letter-spacing: 2px;
         padding: 20px 40px;
@@ -52,121 +51,89 @@
     }
 }
 
-// masses styles
-
-// .masses {
-//     margin-top: 300px;
-//     margin-bottom: 25px;
-//     padding: 25px;
-//     &__header {
-//         font-size: $size-xl;
-//         margin-bottom: 20px;
-//         text-align: center;
-//         text-transform: uppercase;
-//         @include mq(tablet) {
-//             font-size: $size-xxxl;
-//             justify-content: center;
-//             align-items: center;
-//         }
-//     }
-//     &__element {
-//         &--header {
-//             font-size: $size-l;
-//             letter-spacing: 1.5px;
-//             margin-bottom: 15px;
-//             margin-top: 15px;
-//             text-align: center;
-//             text-transform: uppercase;
-//             @include mq(tablet) {
-//                 font-size: $size-xxl;
-//             }
-//         }
-//         &--left {
-//             text-align: center;
-//         }
-//     }
-// }
-
-
-// .masses-hours {
-//     display: flex;
-//     font-size: $size-m;
-//     gap: 15px;
-//     justify-content: flex-start;
-//     @include mq(tablet) {
-//         font-size: $size-xl;
-//         gap: 25px;
-//         justify-content: center;
-//         align-items: center;
-//     }
-// }
-
-// .masses-item {
-//     margin-bottom: 10px;
-// }
-
-// .masses-box {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     gap: 25;
-//     @include mq(tablet) {
-//         flex-direction: row;
-//         gap: 150;
-//         justify-content: center;
-//     }
-// }
-
-// .masses-txt {
-//     font-size: $size-xs;
-//     font-style: italic;
-//     letter-spacing: 1.1px;
-//     margin-top: 15px;
-//     text-align: center;
-//     text-transform: none;
-//     @include mq(tablet) {
-//         font-size: $size-m;
-//     }
-// }
-
-// .masses-left {
-//     text-align: left;
-// }
-
-// prayer styles
-.michael-prayer {
-    background: url(../../images/michael_image.png);
-    background-position: 50% 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    width: 100%;
-}
-
-.text {
-    font-size: $size-m;
-    margin-top: -10px;
-    line-height: 2;
-    @include mq(tablet) {
+// masses
+.masses {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 25px;
+    &__header {
         font-size: $size-xl;
-        margin-top: 25px;
+        font-weight: $weight-l;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        @include mq(tablet) {
+            font-size: $size-xxl;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
-.michael-box {
+.masses-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 200px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
+    justify-content: flex-start;
+    gap: 25;
     @include mq(tablet) {
-        padding-top: 250px;
+        flex-direction: row;
+        gap: 100;
+        justify-content: center;
+    }
+    @include mq(desktop) {
+        flex-direction: row;
+        gap: 150;
+        justify-content: center;
     }
 }
 
-.title {
+.masses-subheader {
+    font-size: $size-l;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
     text-transform: uppercase;
+    @include mq(tablet) {
+        font-size:
+        $size-xl;
+    }
+    &--left {
+        text-align: center;
+    }
+}
+
+.masses-hours {
+    display: flex;
+    font-size: $size-m;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-left: 55px;
+    @include mq(tablet) {
+        font-size: $size-xl;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    &__item {
+        margin-bottom: 10px;
+    }
+}
+
+.masses-position {
+    text-align: left;
+}
+
+.masses-txt {
+    font-size: $size-xs;
+    font-style: italic;
+    letter-spacing: 1.1px;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: none;
+    @include mq(tablet) {
+        font-size: $size-m;
+    }
 }
