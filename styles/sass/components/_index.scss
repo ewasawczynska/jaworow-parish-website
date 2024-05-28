@@ -34,10 +34,12 @@
         border: 3px solid $fontColor;
         border-radius: 5px;
         box-shadow: 0px 0px 10px 0px rgba(1, 28, 80, 0.3);
+        color: $fontColor;
         cursor: pointer;
+        font-family: $defaultFont;
         font-size: $size-xxl;
-        font-weight: $weight-m;
-        letter-spacing: 3;
+        font-weight: $weight-l;
+        letter-spacing: 2px;
         padding: 20px 40px;
         text-transform: uppercase;
         transition-duration: 0.5s;
@@ -70,7 +72,7 @@
 //     &__element {
 //         &--header {
 //             font-size: $size-l;
-//             letter-spacing: 1.5;
+//             letter-spacing: 1.5px;
 //             margin-bottom: 15px;
 //             margin-top: 15px;
 //             text-align: center;
@@ -118,7 +120,7 @@
 // .masses-txt {
 //     font-size: $size-xs;
 //     font-style: italic;
-//     letter-spacing: 1.1;
+//     letter-spacing: 1.1px;
 //     margin-top: 15px;
 //     text-align: center;
 //     text-transform: none;

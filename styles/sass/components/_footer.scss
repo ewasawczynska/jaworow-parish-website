@@ -59,13 +59,13 @@ footer {
         align-items: center;
         font-size: $size-xxs;
         margin-top: 30px;
-        letter-spacing: 1.5;
+        letter-spacing: 1.5px;
         text-align: center;
         @include mq(tablet) {
             font-size: $size-s;
         }
         &--author {
-            letter-spacing: 1.2;
+            letter-spacing: 1.2px;
             font-size: $size-xxxs;
             @include mq(tablet) {
                 font-size: $size-xs;
