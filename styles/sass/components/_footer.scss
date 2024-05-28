@@ -7,19 +7,26 @@ footer {
 
 .footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: $size-s;
-    justify-content: space-between;
+    justify-content: center;
     @include mq(tablet) {
-        font-size: $size-l;
+        font-size: $size-m;
+        flex-direction: row;
+        justify-content: space-between;
     }
     &__element {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 10;
+        align-items: center;
+        gap: 10px;
         @include mq(tablet) {
-            gap: 15;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        &--header {
+            font-weight: $weight-l;
         }
         &--right {
             display: none;
@@ -27,14 +34,15 @@ footer {
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
-                gap: 28;
+                gap: 28px;
             }
         }
         &--mobile {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 12;
+            flex-direction: row;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 30px;
             transition-duration: 0.5s;
             @include mq(tablet) {
                 display: none;
@@ -55,9 +63,9 @@ footer {
         color: $contrastColor;
         display: flex;
         flex-direction: column;
-        gap: 3;
+        gap: 3px;
         align-items: center;
-        font-size: $size-xxs;
+        font-size: $size-xs;
         margin-top: 30px;
         letter-spacing: 1.5px;
         text-align: center;
@@ -66,7 +74,7 @@ footer {
         }
         &--author {
             letter-spacing: 1.2px;
-            font-size: $size-xxxs;
+            font-size: $size-xxs;
             @include mq(tablet) {
                 font-size: $size-xs;
             }
@@ -76,7 +84,6 @@ footer {
 
 .footer-contact {
     fill: $fontColor;
-    font-size: $size-m;
     transition-duration: 0.5s;
     &:focus,
     &:hover {
@@ -84,12 +91,16 @@ footer {
       fill: $contrastColor;
     };
     @include mq(tablet) {
-        font-size: $size-l;
+        font-size: $size-m;
     }
     &__icon {
+        height: 24px;
+        width: 24px;
         @include mq(tablet) {
             margin-left: 20px;
             margin-bottom: -7px;
+            height: 18px;
+            width: 18px;
         }
     }
 }
