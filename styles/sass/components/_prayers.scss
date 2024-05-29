@@ -1,36 +1,30 @@
 .michael-prayer {
     background: url(../../images/michael_image.png);
-    background-position: 50% 30%;
+    background-position: 50% 20%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
-    width: 100%;
-}
-
-.text {
-    font-size: $size-m;
-    margin-top: -10px;
-    line-height: 2;
-    @include mq(tablet) {
-        font-size: $size-xl;
-        margin-top: 25px;
-    }
-}
-
-.michael-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    padding-top: 200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-bottom: 40px;
+    padding-top: 190px;
     text-align: center;
-    @include mq(tablet) {
-        padding-top: 250px;
+    width: 100%;
+    &__title {
+        font-size: $size-xl;
+        font-weight: $weight-l;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
     }
-}
-
-.title {
-    text-transform: uppercase;
+    &__text {
+        font-size: $size-m;
+        margin-top: -10px;
+        line-height: 2;
+        @include mq(tablet) {
+        font-size: $size-xl;
+        margin-top: 25px;
+        }
+    }
 }
