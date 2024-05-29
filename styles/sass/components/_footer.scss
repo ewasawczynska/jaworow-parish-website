@@ -18,16 +18,21 @@ footer {
     &__element {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        margin: auto;
+        // align-items: center;
         gap: 10px;
         @include mq(tablet) {
             align-items: flex-start;
+            margin: 0;
             gap: 15px;
         }
         &--header {
             font-weight: $weight-l;
         }
+        // &--margin {
+        //     margin-top: 20px;
+        // }
         &--right {
             display: none;
             @include mq(tablet) {
@@ -55,7 +60,7 @@ footer {
             @include mq(tablet) {
                 display: flex;
                 margin: auto;
-                margin-top: -135px;
+                margin-top: -145px;
             }
         }
     }

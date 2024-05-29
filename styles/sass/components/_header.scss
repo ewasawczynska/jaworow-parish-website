@@ -1,3 +1,4 @@
+// navigation
 .nav {
   display: none;
   @include mq(tablet) {
@@ -62,6 +63,7 @@
   }
 }
 
+// parish logo position
 .logo-box {
   display: flex;
   flex-direction: column;
@@ -71,7 +73,7 @@
 .logo {
   &__img {
     height: 168px;
-    margin-top: 30px;
+    margin-top: 15px;
     width: 199px;
   @include mq(tablet) {
     margin-top: -95px;
@@ -84,6 +86,7 @@
 }
 }
 
+// burger (mobile)
 .menu-button {
   background-color: transparent;
   border: none;
@@ -93,6 +96,8 @@
     display: none;
   }
   &__burger {
+    background-color: rgba(173,131,48, 0.1);
+    border-radius: 5px;
     height: 28px;
     margin-top: 10px;
     stroke: $fontColor;

@@ -68,16 +68,8 @@
     </header>
 <!-- --- -->
 <!-- gallery with button -->
-  <div class="gallery">
-    <div class="gallery__container">
-        <img src="./images/churches/jaworow.png" alt="Kościół w Jaworowie" class="img-active">
-        <img src="./images/churches/czestocice.png" alt="Kościół w Częstocicach">
-        <img src="./images/churches/klosow.png" alt="Kościół w Kłosowie">
-        <img src="./images/churches/olesnica_mala.png" alt="Kościół w Oleśnicy Małej">
-    </div>
-    <div class="info">
-      <button class="info__button" type="button">Ogłoszenia parafialne</button>
-    </div>
+  <div class="announcements">
+    <button class="announcements__button" type="button" data-modal-open>Ogłoszenia parafialne</button>
   </div>
 <!-- --- -->
 <!-- masses -->
@@ -146,7 +138,8 @@
           <p class="footer__element--header">Parafia św. Michała Archanioła</p>
           <p class="footer__element--text">Jaworów 1</p>
           <p class="footer__element--text">57-120 Wiązów</p>
-          <p class="footer__element--text">nr rachunku bankowego: NR-RKU-PARAFII</p>
+          <p class="footer__element--text footer__element--margin">nr rachunku bankowego:</p>
+          <p class="footer__element--text">47 1020 5242 0000 2702 0551 2852</p>
         </div>
         <div class="footer__element footer__element--right">
           <a href="tel:+48605901507" class="footer-contact">
@@ -240,7 +233,7 @@
 <!-- --- -->
 <!-- scripts -->
   <script defer src="./js/mobile-menu.js"></script>
-  <script defer src="./js/gallery.js"></script>
+  <script type="module" src="./js/scroll-animation.js"></script>
 <!-- --- -->
   </body>
 </html>
