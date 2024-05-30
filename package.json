@@ -4,7 +4,7 @@
   "description": "Website of the Jaworów parish.",
   "scripts": {
     "start": "parcel *.html",
-    "build": "parcel build *.html --public-url /jaworow-parish-website/"
+    "build": "parcel build *.html --public-url /jaworow-parish-website/ --no-cache"
   },
   "keywords": [
     "church",
