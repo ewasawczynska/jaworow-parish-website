@@ -1,0 +1,52 @@
+.backdrop {
+    background-color: rgba(47, 48, 58, 0.2);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    position: absolute;
+    box-shadow: 0px -10px 22px -15px rgba(232, 226, 212, 1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 30px);
+    max-width: 450px;
+    height: 85vh;
+    border-radius: 4px;
+    background-color: $lightColor;
+    @include mq(tablet) {
+        width: calc(100% - 150px);
+        max-width: 800px;
+        height: 85vh;
+    }
+    &__exit {
+        background-color: inherit;
+        border: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        stroke: $fontColor;
+        transition-duration: 0.5s;
+        &:focus,
+        &:hover {
+            cursor: pointer;
+            stroke: $contrastColor;
+        }
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition-property: opacity;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
