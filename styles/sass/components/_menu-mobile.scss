@@ -1,6 +1,6 @@
 .menu-mobile {
     background-color: $bgColor;
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
@@ -8,8 +8,8 @@
     top: 0px;
     left: 0px;
     text-align: center;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+    transform: translateY(-100%);
+    transition: transform 500ms ease-in-out;
     &__exit {
       align-self: flex-end;
       background-color: inherit;
@@ -50,7 +50,6 @@
     }
   }
   
-.is-open {
-  display: flex;
-  transform: translateX(0);
-}
+  .menu-mobile.is-open {
+    transform: translateY(0);
+  }
