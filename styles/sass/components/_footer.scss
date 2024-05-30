@@ -20,7 +20,6 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         margin: auto;
-        // align-items: center;
         gap: 10px;
         @include mq(tablet) {
             align-items: flex-start;
@@ -30,9 +29,6 @@ footer {
         &--header {
             font-weight: $weight-l;
         }
-        // &--margin {
-        //     margin-top: 20px;
-        // }
         &--right {
             display: none;
             @include mq(tablet) {
