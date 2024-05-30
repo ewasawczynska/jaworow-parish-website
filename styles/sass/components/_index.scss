@@ -22,16 +22,16 @@
     }
     &__button {
         background-color: rgba(250, 250,250, 0.6);
-        border: 2px solid $fontColor;
+        border: 1px solid $fontColor;
         border-radius: 5px;
-        box-shadow: 0px 0px 10px 0px rgba(1, 28, 80, 0.3);
+        box-shadow: 0px 0px 10px 1px rgba(1, 28, 80, 0.9);
         color: $fontColor;
         cursor: pointer;
         font-family: $defaultFont;
         font-size: $size-l;
-        font-weight: $weight-l;
-        letter-spacing: 2px;
-        padding: 10px 20px;
+        font-weight: $weight-m;
+        letter-spacing: 2.5px;
+        padding: 20px 10px;
         text-transform: uppercase;
         transition-duration: 0.5s;
         &:focus,
