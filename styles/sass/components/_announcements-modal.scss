@@ -57,6 +57,7 @@
         &--header {
             font-size: $size-xl;
             letter-spacing: 2px;
+            text-align: center;
             @include mq(tablet) {
                 font-size: $size-xxl;
             }
@@ -81,8 +82,13 @@
         &--blessing {
             font-style: italic;
             letter-spacing: 2px;
-            margin-top: 50px;
+            margin-top: 30px;
             font-family: $decorativeFont;
+            text-align: center;
+            @include mq(tablet) {
+                padding-bottom: 40px;
+                margin-top: 40px;
+            }
         }
     }
 }
@@ -110,6 +116,8 @@
     text-transform: uppercase;
     @include mq(tablet) {
         font-size: $size-m;
+        margin-bottom: 15px;
+        padding-bottom: 7px;
     }
 }
 
@@ -121,23 +129,35 @@
     margin-bottom: 10px;
     @include mq(tablet) {
         font-size: $size-l;
+        gap: 15px;
     }
     &__place {
         width: 80px;
+        @include mq(tablet) {
+            width: 130px;
+        }
     }
     &__hour {
         width: 40px;
+        @include mq(tablet) {
+            width: 50px;
+        }
     }
     &__intention {
         font-weight: 500;
-        width: calc(100% - 140px);
+        width: calc(100% - 120px);
+        @include mq(tablet) {
+            width: calc(100% - 180px)
+        }
+    }
+    &--sunday {
+        margin-bottom: 15px;
     }
 }
 
 .sunday-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 10px;
     margin-top: 25px;
 }
@@ -145,6 +165,13 @@
 .info-header-add {
     font-size: $size-s;
     letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-align: center;
+    @include mq(tablet) {
+        font-size: $size-m;
+        margin-bottom: 10px;
+    }
+
 }
 
 
