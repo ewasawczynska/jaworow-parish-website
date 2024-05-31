@@ -23,7 +23,7 @@
     height: 85vh;
     border-radius: 4px;
     background-color: $lightColor;
-    overflow: scroll;
+    overflow: auto;
     @include mq(tablet) {
         font-size: $size-l;
         width: calc(100% - 150px);
