@@ -13,6 +13,7 @@
 
 .modal {
     box-shadow: 0px -10px 22px -15px rgba(232, 226, 212, 1);
+    font-size: $size-m;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,6 +25,7 @@
     background-color: $lightColor;
     overflow: scroll;
     @include mq(tablet) {
+        font-size: $size-l;
         width: calc(100% - 150px);
         max-width: 800px;
         height: 85vh;
@@ -47,9 +49,17 @@
         flex-direction: column;
         align-items: center;
         padding: 45px 60px;
+        @include mq(tablet) {
+            width: calc(100% - 150px);
+            max-width: 800px;
+            height: 85vh;
+        }
         &--header {
-            font-size: $size-xxl;
+            font-size: $size-xl;
             letter-spacing: 2px;
+            @include mq(tablet) {
+                font-size: $size-xxl;
+            }
         }
         &--date {
             letter-spacing: 2px;
@@ -66,39 +76,61 @@
         &--masses {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            font-size: $size-s;
         }
         &--blessing {
             font-style: italic;
             letter-spacing: 2px;
             margin-top: 50px;
+            font-family: $decorativeFont;
         }
     }
 }
 
 .info-header {
-    font-size: $size-xl;
+    font-size: $size-l;
     margin-bottom: 15px;
     text-align: center;
+    @include mq(tablet) {
+        font-size: $size-xl;
+    }
+    &--sunday {
+        margin-bottom: 3px; 
+    }
+}
+
+.info-subheader {
+    border-bottom: 1px solid $contrastColor;
+    color: $contrastColor;
+    font-size: $size-s;
+    font-weight: $weight-l;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    @include mq(tablet) {
+        font-size: $size-m;
+    }
 }
 
 .info-day {
-    font-size: $size-l;
+    font-size: $size-m;
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
-    &__day {
-        color: $contrastColor;
-        width: 100px;
+    margin-bottom: 10px;
+    @include mq(tablet) {
+        font-size: $size-l;
     }
     &__place {
-        width: 140px;
+        width: 80px;
     }
     &__hour {
-        width: 60px;
+        width: 40px;
     }
     &__intention {
-        width: calc(100% - 280px);
+        font-weight: 500;
+        width: calc(100% - 140px);
     }
 }
 
