@@ -16,7 +16,7 @@
     <link rel="manifest" href="./site.webmanifest">
 <!-- --- -->
 
-    <title>Parafia Jaworów | kontakt</title>
+    <title>Kontakt</title>
     <link rel="stylesheet" href="./styles/css/main.min.css" />
   </head>
   <body>
@@ -69,6 +69,44 @@
         </div>
       </div>
     </header>
+<!-- --- -->
+
+<!-- contact -->
+<div class="container">
+  <div class="contact">
+    <p class="contact__header">Kontakt</p>
+    <div class="contact__address">
+      <p class="contact__address--name">Parafia św. Michała Archanioła w Jaworowie</p>
+      <p>Jaworów 1, 57-120 Wiązów</p>
+      <p>605 901 507</p>
+      <p>parafia.jaworow@wp.pl</p>
+      <p class="contact__address--info">Kancelaria parafialna czynna we wtorki i piątki po Mszach Św.</p>
+    </div>
+    <p class="contact__subheader">Numery rachunków bankowych</p>
+    <div class="contact__bank-acc">
+      <div class="bank-box">
+        <p class="bank-box__name">parafia</p>
+        <p class="bank-box__number">47 1020 5242 0000 2702 0551 2852</p>
+      </div>
+      <div class="bank-box">
+        <p class="bank-box__name">Jaworów</p>
+        <p class="bank-box__number">17 1020 5242 0000 2702 0551 9600</p>
+      </div>
+      <div class="bank-box">
+        <p class="bank-box__name">Kłosów</p>
+        <p class="bank-box__number">38 1020 5242 0000 2902 0551 3983</p>
+      </div>
+      <div class="bank-box">
+        <p class="bank-box__name">Częstocice</p>
+        <p class="bank-box__number">35 1020 5242 0000 2602 0551 5251</p>
+      </div>
+      <div class="bank-box">
+        <p class="bank-box__name">Oleśnica Mała</p>
+        <p class="bank-box__number">25 1020 5242 0000 2002 0551 5822</p>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- --- -->
 
 <!-- footer -->
@@ -176,97 +214,8 @@
     </div>
 <!-- --- -->
 
-<!-- announcements modal -->
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal__exit" data-modal-close>
-      <svg width="32" height="32">
-        <use href="./images/icons.svg#icon-exit"></use>
-      </svg>
-    </button>
-    <div class="modal__info">
-      <b class="modal__info--header">Ogłoszenia parafialne</b>
-      <p class="modal__info--date">• 26.05.2024 •</p>
-      <ul class="modal__info--text">
-        <li>Dziś festyn rodzinny organizowany przez SP Jaworów.</li>
-        <li>Dziękujemy Rodzinom, które przygotowały kościół do świątecznej liturgii.</li>
-        <li>Prasa katolicka: <b>Gość Niedzielny</b> 10zł i <b>Mały Gość</b> 7zł.</li>
-        <li>W tygodniu spotkanie dla bierzmowanych.</li>
-        <li><b>Uroczystość Bożego Ciała.</b> Zapraszam dzieci komunijne i rocznicowe w strojach komunijnych. Zapraszam do aktywnego przeżywania uroczystości.</li>
-        <li>W sobotę odwiedziny chorych.</li>
-      </ul>
-      <div class="modal__info--masses">
-        <b class="info-header">Msze Święte w tygodniu</b>
-        <p class="info-subheader">wtorek</p>
-        <div class="info-day">
-          <p class="info-day__hour">18.00</p>
-          <p class="info-day__place">Kłosów</p>
-          <p class="info-day__intention">za chorych</p>
-        </div>
-        <p class="info-subheader">środa</p>
-        <div class="info-day">
-          <p class="info-day__hour">18.00</p>
-          <p class="info-day__place">Częstocice</p>
-          <p class="info-day__intention">za Misje</p>
-        </div>
-        <p class="info-subheader">czwartek</p>
-        <div class="info-day">
-          <p class="info-day__hour">08.00</p>
-          <p class="info-day__place">Oleśnica Mała</p>
-          <p class="info-day__intention">za Klarę w I rocznicę urodzin; za Sylwię, Martynę i Marcelinę</p>
-        </div>
-        <div class="info-day">
-          <p class="info-day__hour">10.00</p>
-          <p class="info-day__place">Częstocice</p>
-          <p class="info-day__intention">rez. Filar 12a</p>
-        </div>
-        <div class="info-day">
-          <p class="info-day__hour">12.00</p>
-          <p class="info-day__place">Jaworów</p>
-          <p class="info-day__intention">za Parafian</p>
-        </div>
-        <p class="info-subheader">piątek</p>
-        <div class="info-day">
-          <p class="info-day__hour">18.00</p>
-          <p class="info-day__place">Jaworów</p>
-          <p class="info-day__intention">za Patryka z okazji urodzin</p>
-        </div>
-      </div>
-      <div class="modal__info--masses">
-        <div class="sunday-box">
-          <b class="info-header info-header--sunday">IX Niedziela zwykła - 02.06.2024</b>
-          <p class="info-header-add">Adoracja Najświętszego Sakramentu</p>
-        </div>
-        <div class="info-day info-day--sunday">
-          <p class="info-day__hour">08.30</p>
-          <p class="info-day__place">Kłosów</p>
-          <p class="info-day__intention">rez. Lewandowscy</p>
-        </div>
-        <div class="info-day info-day--sunday">
-          <p class="info-day__hour">09.30</p>
-          <p class="info-day__place">Jaworów</p>
-          <p class="info-day__intention">++ Jola i Krzysztof - od siostry z Rodziną</p>
-        </div>
-        <div class="info-day info-day--sunday">
-          <p class="info-day__hour">10.45</p>
-          <p class="info-day__place">Częstocice</p>
-          <p class="info-day__intention">rez. Maksymiak</p>
-        </div>
-        <div class="info-day info-day--sunday">
-          <p class="info-day__hour">12.00</p>
-          <p class="info-day__place">Oleśnica Mała</p>
-          <p class="info-day__intention">rez. Grażyna Dewerenda</p>
-        </div>
-      </div>
-      <p class="modal__info--blessing">Niech nam Pan błogosławi... 🕊️</p>
-    </div>
-  </div>
-</div>
-<!-- --- -->
-
 <!-- scripts -->
   <script defer src="./js/mobile-menu.js"></script>
-  <script src="./js/announcements-modal.js"></script>
   <script src="./js/scrollreveal.min.js"></script>
   <script>
     window.sr = ScrollReveal();

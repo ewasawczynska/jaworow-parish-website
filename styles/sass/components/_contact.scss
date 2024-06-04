@@ -1,0 +1,75 @@
+.contact {
+    border-radius: 25px;
+    box-shadow: 0px 0px 33px 9px rgba(232, 226, 212, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin: 35px auto 45px auto;
+    text-align: center;
+    width: 50vw;
+    &__header {
+        font-size: $size-xl;
+        font-weight: $weight-l;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        @include mq(tablet) {
+            font-size: $size-xxl;
+            margin-bottom: 20px;
+        }
+    }
+    &__subheader {
+        font-size: $size-m;
+        font-weight: $weight-l;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        @include mq(tablet) {
+            font-size: $size-l;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+    }
+    &__address {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        &--name {
+            font-weight: $weight-l;
+        }
+        &--info {
+            font-size: $size-s;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            @include mq(tablet) {
+                font-size: $size-m;
+            }
+        }
+    }
+    &__bank-acc {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-transform: uppercase;
+    }
+}
+
+.bank-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    &__name {
+        color: $contrastColor;
+        font-size: $size-s;
+        font-weight: $weight-l;
+        letter-spacing: 2px;
+        @include mq(tablet) {
+            text-align: left;
+        }
+    }
+}
