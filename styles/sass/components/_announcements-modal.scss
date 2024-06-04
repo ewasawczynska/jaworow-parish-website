@@ -48,11 +48,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 45px 60px;
+        padding: 25px 40px;
         @include mq(tablet) {
             width: calc(100% - 150px);
             max-width: 800px;
             height: 85vh;
+            padding: 45px 60px;
         }
         &--header {
             font-size: $size-xl;
