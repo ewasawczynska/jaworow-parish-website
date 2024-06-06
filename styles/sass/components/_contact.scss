@@ -40,16 +40,27 @@
     &__address {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 15px;
+        font-size: $size-m;
+        @include mq(tablet) {
+            font-size: $size-l;
+        }
         &--name {
+            font-size: $size-m;
             font-weight: $weight-l;
+            @include mq(tablet) {
+                font-size: $size-l;
+                margin-bottom: 15px;
+                margin-top: 25px;
+            }
         }
         &--info {
+            font-size: $size-m;
+            font-style: italic;
             margin-bottom: 15px;
-            margin-top: 10px;
+            margin-top: 15px;
             @include mq(tablet) {
+                font-size: $size-l;
             }
         }
     }
@@ -64,14 +75,19 @@
 .bank-box {
     display: flex;
     flex-direction: column;
+    font-size: $size-m;
     gap: 5px;
+    @include mq(tablet) {
+        font-size: $size-l;
+    }
     &__name {
         color: $contrastColor;
-        font-size: $size-s;
+        font-size: $size-xs;
         font-weight: $weight-l;
         letter-spacing: 2px;
+        text-align: left;
         @include mq(tablet) {
-            text-align: left;
+            font-size: $size-s;
         }
     }
 }
