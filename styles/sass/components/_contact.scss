@@ -59,8 +59,10 @@
             font-style: italic;
             margin-bottom: 15px;
             margin-top: 15px;
+            width: 350px;
             @include mq(tablet) {
                 font-size: $size-l;
+                width: 400px;
             }
         }
     }

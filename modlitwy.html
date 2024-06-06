@@ -8,32 +8,206 @@
       content="Parafia św. Michała Archanioła w Jaworowie"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
     <link rel="manifest" href="./site.webmanifest">
 <!-- --- -->
+
     <title>Modlitwy</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="./styles/css/main.min.css" />
   </head>
   <body>
-    <div class="build">
-        <p class="build__txt">strona w budowie</p>
-        <div class="build__loader"></div>
-        <a href="./index.html" class="build__back">powrót do strony głównej</a>
-    </div>
-    <!-- <div class="container">
+
+<!-- header -->
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__side">
+            <div class="nav-box nav-box--left">
+              <a href="./index" class="nav-box__link"
+              >Strona główna</a
+            >
+              <a href="./modlitwy" class="nav-box__link">Modlitwy</a>
+          </div>
+            <div class="nav__line"></div>
+          </div>
+          <div class="nav__side">
+            <div class="nav-box nav-box--right">
+              <a href="./o-parafii" class="nav-box__link">O parafii</a>
+              <a href="./kontakt" class="nav-box__link">Kontakt</a>
+            </div>
+            <div class="nav__line"></div>
+          </div>
+        </nav>
+        <div class="logo-box">
+          <a href="./index" class="logo">
+            <img
+            src="./images/logo_transparent.png"
+            srcset="
+              ./images/logo_transparent@1.5x.png 1.5x
+              ./images/logo_transparent@2x.png 2x
+            "
+            alt="Logo parafii św. Michała Archanioła w Jaworowie."
+            width="780"
+            height="659"
+            class="logo__img"
+          />
+          </a>
+          <button
+          class="menu-button menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="menu-button__burger">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        </div>
+      </div>
+    </header>
+<!-- --- -->
+
+<!-- prayers -->
+<div class="prayers">
+  <p class="prayers__header">Modlitwy</p>
+</div>
+<!-- --- -->
+
+<!-- michael prayer -->
+    <div class="container">
     <div class="michael-prayer">
         <p class="michael-prayer__title">Modlitwa do św. Michała Archanioła</p>
         <i class="michael-prayer__text">Święty Michale Archaniele! Wspomagaj nas w walce,<br/>a przeciw niegodziwości i zasadzkom złego ducha bądź naszą obroną.<br/>Oby go Bóg pogromić raczył, pokornie o to prosimy,<br/>a Ty, Wodzu niebieskich zastępów,<br/>szatana i inne duchy złe, które na zgubę dusz ludzkich po tym świecie krążą,<br/>mocą Bożą strąć do piekła.<br/>Amen.</i>
     </div>
-  </div> -->
+  </div>
+<!-- --- -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer__element">
+          <p class="footer__element--header">Parafia św. Michała Archanioła</p>
+          <p class="footer__element--text">Jaworów 1</p>
+          <p class="footer__element--text">57-120 Wiązów</p>
+          <p class="footer__element--text footer__element--margin">nr rachunku bankowego:</p>
+          <p class="footer__element--text">47 1020 5242 0000 2702 0551 2852</p>
+        </div>
+        <div class="footer__element footer__element--right">
+          <a href="tel:+48605901507" class="footer-contact">
+            605 901 507<svg class="footer-contact__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-phone"></use></svg
+            ></a
+          >
+          <a href="mailto:parafia.jaworow@wp.pl" class="footer-contact">
+            parafia.jaworow@wp.pl<svg class="footer-contact__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-mail"></use></svg
+            ></a
+          >
+          <a href="https://www.facebook.com/profile.php?id=100064316515391" class="footer-contact">
+            Parafia Jaworów<svg class="footer-contact__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use></svg
+            ></a
+          >
+        </div>
+        <div class="footer__element--mobile">
+          <a href="tel:+48605901507" class="footer-contact">
+            <svg class="footer-contact__icon">
+              <use href="./images/icons.svg#icon-phone"></use></svg
+            ></a
+          >
+          <a href="mailto:parafia.jaworow@wp.pl" class="footer-contact">
+            <svg class="footer-contact__icon">
+              <use href="./images/icons.svg#icon-mail"></use></svg
+            ></a
+          >
+          <a href="https://www.facebook.com/profile.php?id=100064316515391" class="footer-contact">
+            <svg class="footer-contact__icon">
+              <use href="./images/icons.svg#icon-facebook"></use></svg
+            ></a
+          >
+        </div>
+      </div>
+      <div class="footer__graphics">
+        <a href="index">
+          <img
+          src="./images/michael_transparent.png"
+          srcset="
+            ./images/michael_transparent@2x.png 2x
+            ./images/michael_transparent@3x.png 3x
+          "
+          alt="św. Michała Archanioł"
+          width="150"
+          height="150"
+          class="footer__graphics--icon"
+        />
+        </a>
+      </div>
+      <div class="footer__info">
+        <p class="footer__info--copyrights">Copyright © 2024 Parafia św. Michała Archanioła w Jaworowie</p>
+        <p class="footer__info--author">created with ᥫ᭡ by ewa sawczynska</p>
+      </div>
+    </div>
+  </footer>
+<!-- --- -->
+
+<!-- mobile menu -->
+    <div class="menu-mobile js-menu-container" id="mobile-menu">
+      <button class="menu-mobile__exit menu-toggle js-close-menu">
+        <svg width="32" height="32">
+          <use href="./images/icons.svg#icon-exit"></use>
+        </svg>
+      </button>
+      <ul class="menu-mobile__list">
+        <li class="menu-mobile__item menu-toggle js-close-menu">
+          <a class="menu-mobile__link" href="./index">Strona główna</a>
+        </li>
+        <li class="menu-mobile__item menu-toggle js-close-menu">
+          <a class="menu-mobile__link" href="./o-parafii">O parafii</a>
+        </li>
+        <li class="menu-mobile__item menu-toggle js-close-menu">
+          <a class="menu-mobile__link" href="./kontakt">Kontakt</a>
+        </li>
+        <li class="menu-mobile__item menu-toggle js-close-menu">
+          <a class="menu-mobile__link" href="./index">
+            <img
+            src="./images/michael_transparent.png"
+            srcset="
+              ./images/michael_transparent@2x.png 2x
+            "
+            alt="św. Michał Archanioł"
+            width="150"
+            height="150"
+            class="menu-mobile__link--img"
+          />
+        </a>
+        <p class="menu-mobile__parish">Parafia św. Michała Archanioła w Jaworowie</p>
+        </li>
+      </ul>
+    </div>
+<!-- --- -->
+
+<!-- scripts -->
+  <script defer src="./js/mobile-menu.js"></script>
+  <script src="./js/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.michael-prayer__title, .michael-prayer__text', {
+    reset: true,
+    delay: 300,
+});
+  </script>
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+<!-- --- -->
+
   </body>
 </html>

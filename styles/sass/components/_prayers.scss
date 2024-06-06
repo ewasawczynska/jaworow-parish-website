@@ -1,3 +1,18 @@
+.prayers {
+    &__header {
+        font-size: $size-xl;
+        font-weight: $weight-l;
+        letter-spacing: 2px;
+        margin-top: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        @include mq(tablet) {
+            font-size: $size-xxl;
+            margin-bottom: 20px;
+        }
+    }
+}
+
 .michael-prayer {
     background: url(../../images/michael_image.png);
     background-position: 50% 20%;
