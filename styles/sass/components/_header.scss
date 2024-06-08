@@ -50,7 +50,6 @@
   }
   &__link {
     transition-duration: 0.5s;
-    &:focus,
     &:hover {
       color: $contrastColor;
     };
@@ -103,7 +102,6 @@
     stroke: $fontColor;
     width: 28px;
     transition-duration: 0.5s;
-    &:focus,
     &:hover {
       stroke: $contrastColor;
     };

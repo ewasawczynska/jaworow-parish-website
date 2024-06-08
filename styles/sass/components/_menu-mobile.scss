@@ -18,7 +18,6 @@
       margin-top: 22px;
       stroke: $fontColor;
       transition-duration: 0.5s;
-      &:focus,
       &:hover {
         cursor: pointer;
         stroke: $contrastColor;
@@ -46,7 +45,6 @@
       text-decoration: none;
       color: $fontColor;
       transition-duration: 0.5s;
-      &:focus,
       &:hover {
         color: $contrastColor;
       }

@@ -37,7 +37,6 @@
         padding: 20px 20px;
         text-transform: uppercase;
         transition-duration: 0.5s;
-        &:focus,
         &:hover {
             background-color: $fontColor;
             color: $lightColor;

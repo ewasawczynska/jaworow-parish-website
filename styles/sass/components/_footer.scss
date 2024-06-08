@@ -86,7 +86,6 @@ footer {
 .footer-contact {
     fill: $fontColor;
     transition-duration: 0.5s;
-    &:focus,
     &:hover {
       color: $contrastColor;
       fill: $contrastColor;

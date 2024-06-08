@@ -38,7 +38,6 @@
         right: 10px;
         stroke: $fontColor;
         transition-duration: 0.5s;
-        &:focus,
         &:hover {
             cursor: pointer;
             stroke: $contrastColor;
@@ -148,19 +147,18 @@
         }
     }
     &__hour {
-        width: 40px;
+        width: 50px;
         @include mq(tablet) {
-            width: 50px;
+            width: 60px;
         }
     }
     &__intention {
         font-weight: 500;
-        width: 250px;
+        width: 40vw;
+        max-width: 250px;
         @include mq(tablet) {
-            width: 350px;
-        }
-        @include mq(desktop) {
-            width: 470px;
+            width: 45vw;
+            max-width: 460px;
         }
     }
     &--sunday {
