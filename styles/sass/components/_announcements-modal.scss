@@ -49,10 +49,12 @@
         flex-direction: column;
         align-items: center;
         padding: 25px 40px;
+        line-height: 1.5;
         @include mq(tablet) {
             width: calc(100% - 150px);
             max-width: 800px;
             height: 85vh;
+            line-height: 1.8;
             padding: 45px 60px;
         }
         &--header {
@@ -120,17 +122,24 @@
         margin-bottom: 15px;
         padding-bottom: 7px;
     }
+    &--patron {
+        color: rgba(173,131,48, 0.8);
+        font-size: $size-xs;
+        font-style: italic;
+        text-transform: none;
+        @include mq(tablet) {
+            font-size: $size-s;
+        }
+    }
 }
 
 .info-day {
     font-size: $size-m;
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px;
     margin-bottom: 10px;
     @include mq(tablet) {
         font-size: $size-l;
-        gap: 15px;
     }
     &__place {
         width: 80px;
@@ -146,9 +155,12 @@
     }
     &__intention {
         font-weight: 500;
-        width: calc(100% - 120px);
+        width: 250px;
         @include mq(tablet) {
-            width: calc(100% - 180px)
+            width: 350px;
+        }
+        @include mq(desktop) {
+            width: 470px;
         }
     }
     &--sunday {
@@ -173,6 +185,13 @@
         margin-bottom: 10px;
     }
 
+}
+
+.bold-data {
+    font-weight: 550;
+    &--contrast {
+        font-style: italic;
+    }
 }
 
 
