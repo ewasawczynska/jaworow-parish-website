@@ -20,18 +20,18 @@
 	// comment for test
     &__dots {
         font-size: 36px;
-        letter-spacing: 25;
+        letter-spacing: 25px;
     }
 	&__txt {
 		font-size: 26px;
-		letter-spacing: 7;
+		letter-spacing: 7px;
 		@include mq(tablet) {
             font-size: 32px;
         }
 	}
 	&__back {
 		font-size: 12px;
-		letter-spacing: 4;
+		letter-spacing: 4px;
 		margin-top: 5vh;
 		text-decoration: underline;
 		transition-duration: 0.5s;
