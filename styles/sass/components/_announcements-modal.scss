@@ -141,13 +141,13 @@
         font-size: $size-l;
     }
     &__place {
-        width: 80px;
+        width: 90px;
         @include mq(tablet) {
             width: 130px;
         }
     }
     &__hour {
-        width: 50px;
+        width: 45px;
         @include mq(tablet) {
             width: 60px;
         }
