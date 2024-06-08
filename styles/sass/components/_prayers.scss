@@ -101,11 +101,16 @@
     background-position: 50% 20%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 240px;
     width: 100%;
     @include mq(tablet) {
         background-position: 50% 20%;
+        inline-size: 100%;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 20px;
         height: 400px;
+        width: 90vw;
+        max-width: 1280px;
     }
 }
