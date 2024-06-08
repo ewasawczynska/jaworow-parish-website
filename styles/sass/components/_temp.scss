@@ -6,6 +6,16 @@
     gap: 30px;
     margin-top: 25vh;
     text-align: center;
+	&__graphics {
+        width: 100px;
+        height: 100px;
+		margin-bottom: 10px;
+        @include mq(tablet) {
+            width: 150px;
+            height: 150px;
+			margin-bottom: 15px;
+        }
+	}
     &__dots {
         font-size: 36px;
         letter-spacing: 25;
@@ -13,6 +23,9 @@
 	&__txt {
 		font-size: 26px;
 		letter-spacing: 7;
+		@include mq(tablet) {
+            font-size: 32px;
+        }
 	}
 	&__back {
 		font-size: 12px;
@@ -24,6 +37,9 @@
 		&:hover {
 		  color: $contrastColor;
 		};
+		@include mq(tablet) {
+            font-size: 18px;
+        }
 	}
 }
 
