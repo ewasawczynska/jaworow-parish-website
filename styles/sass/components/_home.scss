@@ -48,6 +48,79 @@
     }
 }
 
+// news
+
+.news {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+    &__header {
+        font-size: $size-xl;
+        font-weight: $weight-l;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        @include mq(tablet) {
+            font-size: $size-xxl;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+    &__date {
+        color: $contrastColor;
+        font-size: $size-xs;
+        font-weight: $weight-l;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        text-align: center;
+        @include mq(tablet) {
+            font-size: $size-s;
+        }
+    }
+    &__text {
+        font-size: $size-m;
+        line-height: 1.2;
+        margin-bottom: 5px;
+        text-align: center;
+        @include mq(tablet) {
+            font-size: $size-l;
+            line-height: 1.5;
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        @include mq(tablet) {
+            margin-top: 15px;
+        }
+    }
+}
+
+.news-link {
+    border: 1px solid $fontColor;
+    border-radius: 25px;
+    box-shadow: 0px 0px 4px 1px rgba(1, 28, 80, 0.4);
+    font-size: $size-xs;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 8px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+    &:hover {
+    color: $contrastColor;
+    color: $lightColor;
+    background-color: $fontColor;
+    };
+    @include mq(tablet) {
+        font-size: $size-s;
+        padding: 10px 20px;
+    }
+}
+
 // masses
 .masses {
     margin-top: 25px;
