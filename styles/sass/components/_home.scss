@@ -54,6 +54,10 @@
     margin-top: 25px;
     margin-bottom: 25px;
     padding: 25px;
+    @include mq(tablet) {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
     &__header {
         font-size: $size-xl;
         font-weight: $weight-l;
