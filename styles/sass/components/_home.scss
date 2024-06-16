@@ -129,7 +129,10 @@
 .masses {
     margin-top: 25px;
     margin-bottom: 25px;
-    padding: 25px;
+    padding: 15px;
+    @include mq(tablet) {
+        padding: 25px;
+    }
     &__header {
         font-size: $size-xl;
         font-weight: $weight-l;
@@ -192,6 +195,11 @@
     }
     &__item {
         margin-bottom: 10px;
+        &--highlight {
+            color: $contrastColor;
+            font-weight: 200;
+            letter-spacing: 2px;
+        }
     }
 }
 

@@ -151,7 +151,7 @@
         }
     }
     &__hour {
-        width: 45px;
+        width: 50px;
         @include mq(tablet) {
             width: 60px;
         }
@@ -159,7 +159,7 @@
     &__intention {
         font-weight: 500;
         width: 40vw;
-        max-width: 250px;
+        max-width: 245px;
         @include mq(tablet) {
             width: 45vw;
             max-width: 460px;

@@ -261,7 +261,12 @@
 .masses {
   margin-top: 25px;
   margin-bottom: 25px;
-  padding: 25px;
+  padding: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .masses {
+    padding: 25px;
+  }
 }
 .masses__header {
   font-size: 18px;
@@ -334,6 +339,11 @@
 }
 .masses-hours__item {
   margin-bottom: 10px;
+}
+.masses-hours__item--highlight {
+  color: #AD8330;
+  font-weight: 200;
+  letter-spacing: 2px;
 }
 
 .masses-position {
@@ -528,7 +538,7 @@
   }
 }
 .info-day__hour {
-  width: 45px;
+  width: 50px;
 }
 @media only screen and (min-width: 768px) {
   .info-day__hour {
@@ -538,7 +548,7 @@
 .info-day__intention {
   font-weight: 500;
   width: 40vw;
-  max-width: 250px;
+  max-width: 245px;
 }
 @media only screen and (min-width: 768px) {
   .info-day__intention {
