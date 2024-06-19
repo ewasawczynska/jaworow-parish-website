@@ -76,6 +76,49 @@
 </header>
 <!-- --- -->
 
+<!-- about nav -->
+<div class="container">
+  <div class="about">
+    <p class="about__header">O parafii</p>
+    <div class="about__nav">
+      <a class="about__nav--item" href="#duszpasterze">Duszpasterze</a>
+      <a class="about__nav--item" href="#koscioly">Kościoły</a>
+    </div>
+  </div>
+  <img
+    src="./images/church@1x.png"
+    srcset="
+      ./images/church@2x.png 2x
+      ./images/church@3x.png 3x
+    "
+    alt="Kościół"
+    class="about__graphics"
+  />
+<!-- --- -->
+
+<!-- priests -->
+<div class="about__box">
+  <p class="about__box--name" id="duszpasterze">Duszpasterze</p>
+</div>
+<img
+  src="./images/separator.png"
+  alt="separator"
+  class="about__separator"
+/>
+<!-- --- -->
+
+<!-- churches -->
+<div class="about__box">
+  <p class="about__box--name" id="koscioly">Kościoły</p>
+</div>
+<img
+  src="./images/separator.png"
+  alt="separator"
+  class="about__separator"
+/>
+</div>
+<!-- --- -->
+
 <!-- footer -->
 <footer>
   <div class="container">
@@ -186,7 +229,7 @@
 <script src="./js/scrollreveal.min.js"></script>
 <script>
   window.sr = ScrollReveal();
-  sr.reveal('.prayers__box, .prayer__separator', {
+  sr.reveal('.about__box, .prayer__separator', {
   reset: true,
   delay: 300,
 });
