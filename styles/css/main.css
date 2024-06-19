@@ -1121,11 +1121,31 @@ footer {
   letter-spacing: 1px;
   margin-bottom: 5px;
   margin-top: 25px;
+  list-style-type: none;
 }
 @media only screen and (min-width: 768px) {
   .about__box--name {
     font-size: 18px;
   }
+}
+
+.priest-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-left: 170px;
+}
+
+.priest {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.priest__year {
+  color: #AD8330;
+  letter-spacing: 2px;
+  width: 150px;
 }
 
 .build {

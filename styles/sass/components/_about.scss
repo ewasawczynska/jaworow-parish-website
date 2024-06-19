@@ -76,9 +76,30 @@
             letter-spacing: 1px;
             margin-bottom: 5px;
             margin-top: 25px;
+            list-style-type: none;
             @include mq(tablet) {
                 font-size: $size-xl;
             }
         }
+    }
+}
+
+.priest-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 170px;
+}
+
+.priest {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    &__year {
+        color: $contrastColor;
+        // font-weight: $weight-l;
+        letter-spacing: 2px;
+        width: 150px;
     }
 }
