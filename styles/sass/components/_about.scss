@@ -88,18 +88,72 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 15px;
-    margin-left: 170px;
+    margin-left: 10px;
+    @include mq(tablet) {
+        margin-left: 85px;
+    }
 }
 
 .priest {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 10px;
+    font-size: $size-m;
+    @include mq(tablet) {
+        font-size: $size-l;
+        gap: 15px;
+    }
     &__year {
         color: $contrastColor;
-        // font-weight: $weight-l;
+        flex-wrap: nowrap;
         letter-spacing: 2px;
-        width: 150px;
+        width: 40vw;
+        max-width: 150px;
+        @include mq(tablet) {
+            width: 25vw;
+        }
+    }
+    &__item {
+        text-align: left;
+        width: 45vw;
+        max-width: 200px;
+        @include mq(tablet) {
+            width: 50vw;
+            max-width: 250px;
+        }
+    }
+}
+
+.churches {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.church-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    // &--last {
+    //     margin-bottom: 30px;
+    // }
+}
+
+.church {
+    &__img {
+        margin: auto;
+        margin-top: 30px;
+        width: 136px;
+        height: 180px;
+        border-radius: 10%;
+        box-shadow: 0px 0px 33px 9px rgba(232, 226, 212, 1);
+        @include mq(tablet) {
+            width: 273px;
+            height: 365px;
+        }
     }
 }
