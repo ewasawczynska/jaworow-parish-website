@@ -1181,18 +1181,31 @@ footer {
 
 .churches {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  margin-bottom: 35px;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .churches {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .churches {
+    gap: 20px;
+  }
 }
 
-.church-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
+@media only screen and (min-width: 768px) {
+  .church {
+    flex-basis: calc((100% - 25px) / 2);
+  }
 }
-
+@media only screen and (min-width: 1280px) {
+  .church {
+    flex-basis: calc((100% - 60px) / 4);
+  }
+}
 .church__img {
   margin: auto;
   margin-top: 30px;
@@ -1206,6 +1219,31 @@ footer {
     width: 273px;
     height: 365px;
   }
+}
+.church__overlay {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .church__overlay {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .church__overlay {
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.church--last {
+  margin-bottom: 30px;
 }
 
 .build {
