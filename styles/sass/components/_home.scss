@@ -101,6 +101,19 @@
             margin-top: 15px;
         }
     }
+    &__separator {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 7px;
+        width: 200px;
+        height: 20px;
+        @include mq(tablet) {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            width: 300px;
+            height: 30px;
+        }
+    }
 }
 
 .news-link {
