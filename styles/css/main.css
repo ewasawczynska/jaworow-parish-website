@@ -252,15 +252,15 @@
   margin: auto;
   margin-top: 10px;
   margin-bottom: 7px;
-  width: 136px;
-  height: 180px;
+  width: 70%;
+  height: 70%;
 }
 @media only screen and (min-width: 768px) {
   .news__photo {
     margin-top: 20px;
     margin-bottom: 15px;
-    width: 273px;
-    height: 365px;
+    width: 80%;
+    height: 80%;
   }
 }
 
